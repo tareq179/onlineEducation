@@ -690,3 +690,59 @@ section {
 .footer .credit span{
     color: #fa1d86;
 }
+
+/* responsive */
+
+@media (max-width: 1200px) {
+  html{
+    font-size: 55%;
+  }
+  section{
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header{
+    padding: 2rem;
+
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #224bcf;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar .active{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar ul li {
+    width: 100%;
+  }
+  
+
+  .header .navbar ul li ul {
+    width: 100%;
+    position: relative;
+  }
+
+  .main-video .video{
+    width: 95%;
+    border-width: .2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
